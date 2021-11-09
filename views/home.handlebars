@@ -1,0 +1,98 @@
+
+
+<div class="shroud">
+  <div class="container">
+    <div class="row">
+      <div class="shroudImg">
+        <img src="/images/theOneRing01.jpg" width="40%">
+      </div>
+    </div>
+    <div class="row">
+      <h1> 
+        <div class="shroudText">Welcome to the Middle Earth Supplier.</div>
+        <div class="shroudText"><h3 class="elvish">Welcome to the Middle Earth Supplier</h3></div>
+      </h1>
+    </div>
+  </div>
+</div>
+
+
+
+    {{#each product}}
+
+  <section class="container row scroll">
+                {{#dataValues}}
+    <article class="col-sm-3 center">
+    <a href="/images/{{img_filename}}" target="_blank"> 
+      <img src="/images/{{img_filename}}"
+      class="fullWidth" alt="{{img_filename}}">
+    </a> 
+    </article>
+
+        <article class="col-sm-1"></article>
+
+    <article class="col-sm-5 center">
+      <h5>{{name}}</h5>
+      <p>{{description}}
+      </p>
+    </article>
+
+    <article class="col-sm-1"></article>
+
+      <article class="col-sm-2 center">
+      <div>₡{{list_price}}
+        <form>
+          <input type='number' class="quantity" id="quantity"></input>
+        <button class="add-to-cart" data-title='{{name}}' data-price='{{list_price}}'> Add to cart</button>
+        </form>
+      </div>
+    </article>
+            {{/dataValues}}
+  </section>
+
+      {{/each}}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/cart.js"> </script>
+<script type="text/javascript" src="/js/home.js"> </script>
+
+
+
+

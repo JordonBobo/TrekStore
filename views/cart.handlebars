@@ -1,0 +1,62 @@
+<section>
+<div class="container-fluid scroll ">
+  <h1>Your Cart</h1>
+  
+  <div class="table-responsive">
+    <table class="table table-light">
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody id="cartInfo"></tbody>
+      <tfoot>
+        <td colspan="2">Total Price</td>
+        <td id="orderPrice"></td>
+      </tfoot>
+    </table>
+  </div>
+
+  {{!-- <div class="orderSuccess"> You order has been accepted</div> --}}
+
+  <h2>Shipping Info</h2>
+
+  <form id="shippingInfo">
+    <div class="mb-3">
+      <label for="shippingName" class="form-label">Name</label>
+      <input type="text" class="form-control" id="shippingName" name="name">
+    </div>
+    <div class="mb-3">
+      <label for="shippingAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="shippingAddress" name="description">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submitOrder">Submit Order</button>
+  </form>
+
+  {{!-- <form id="shippingInfo">
+    <div>
+      <label for="shippingName">Name</label>
+      <input type="text" id="shippingName" name="name">
+      <label for="shippingAddress">Address</label>
+      <input type="text" id="shippingAddress" name="description">
+      <button type="submit" id='submitOrder'>Add</button>
+    </div>
+  </form> --}}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/js/cart.js"></script>
+
+
+</section>
